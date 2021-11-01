@@ -1,0 +1,50 @@
+[
+  {
+    "destinationName": "Santorini",
+    "img": "https://i.ibb.co/vHssX7g/img1.jpg",
+    "day": 2,
+    "night": 3,
+    "description": "Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC, forever shaping its rugged landscape. The whitewashed, cubiform houses of its 2 principal towns, Fira and Oia, cling to cliffs above.",
+    "price": 11000
+  },
+  {
+    "destinationName": "Bali",
+    "img": "https://i.ibb.co/c6tLnC9/img2.jpg",
+    "day": 1,
+    "night": 2,
+    "description": "Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali and a few smaller neighbouring islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan.",
+    "price": 10000
+  },
+  {
+    "destinationName": "Istanbul",
+    "img": "https://i.ibb.co/BG7Zc6s/img3.jpg",
+    "day": 2,
+    "night": 3,
+    "description": "Istanbul is a major city in Turkey that straddles Europe and Asia across the Bosphorus Strait. Its Old City reflects cultural influences of the many empires that once ruled here. In the Sultanahmet district, the open-air, Roman-era Hippodrome was for centuries.",
+    "price": 11000
+  },
+  {
+    "destinationName": "Indonesia",
+    "img": "https://i.ibb.co/PtXzXfD/img4.jpg",
+    "day": 1,
+    "night": 2,
+    "description": "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania between the Indian and Pacific oceans. It consists of over seventeen thousand islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea.",
+    "price": 9000
+  },
+  {
+    "destinationName": "Thailand",
+    "img": "https://i.ibb.co/b55s9Tr/img5.jpg",
+    "day": 2,
+    "night": 3,
+    "description": "Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities.",
+    "price": 8000
+  },
+  {
+    "destinationName": "Japan",
+    "img": "https://i.ibb.co/FDRfd9X/img6.jpg",
+    "day": 1,
+    "night": 2,
+    "description": "Japan is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south. It is a beautiful country.",
+    "price": 7000
+  }
+]
