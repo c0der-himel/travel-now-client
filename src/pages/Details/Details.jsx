@@ -21,7 +21,7 @@ const Details = () => {
 
   const onSubmit = (data) => {
     axios
-      .post('http://localhost:5000/booking', {
+      .post('https://cryptic-ocean-42525.herokuapp.com/booking', {
         people: data.people,
         address: data.address,
         userName: user.displayName,
@@ -43,7 +43,7 @@ const Details = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/destinations/${id}`)
+      .get(`https://cryptic-ocean-42525.herokuapp.com/destinations/${id}`)
       .then((res) => setDestination(res.data))
       .catch((err) => console.log(err));
   }, [id]);

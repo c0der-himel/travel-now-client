@@ -25,7 +25,7 @@ const NewDestination = () => {
   }) => {
     const booking = { destinationName, description, price, img, night, day };
     axios
-      .post('http://localhost:5000/newbooking', booking)
+      .post('https://cryptic-ocean-42525.herokuapp.com/newbooking', booking)
       .then((res) => {
         if (res.data.insertedId) {
           setOpen(true);

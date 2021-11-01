@@ -7,14 +7,14 @@ const ManageAllBookings = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/manage`)
+      .get(`https://cryptic-ocean-42525.herokuapp.com/manage`)
       .then((res) => setBookings(res.data))
       .catch((err) => console.log(err));
   }, []);
 
   const handleDeleteBooking = (id) => {
     axios
-      .delete(`http://localhost:5000/mybookings/${id}`)
+      .delete(`https://cryptic-ocean-42525.herokuapp.com/mybookings/${id}`)
       .then((res) => {
         const remainingBookings = bookings.filter(
           (booking) => booking._id !== id

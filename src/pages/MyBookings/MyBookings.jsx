@@ -9,14 +9,29 @@ const MyBookings = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/mybookings/${user?.email}`)
+      .get(
+        `https://cryptic-ocean-42525.herokuapp.com/mybookings/${user?.email}`
+      )
       .then((res) => setBookings(res.data))
       .catch((err) => console.log(err));
+    // fetch(`http://localhost:5000/mybookings/${user?.email}`, {
+    //   headers: {
+    //     authorization: `Bearer ${localStorage.getItem('idToken')}`,
+    //   },
+    // })
+    //   .then((res) => {
+    //     if (res.status === 200) {
+    //       return res.json();
+    //     } else if (res.status === 401) {
+    //       history.push('/login');
+    //     }
+    //   })
+    //   .then((data) => setBookings(data));
   }, [user?.email]);
 
   const handleDeleteBooking = (id) => {
     axios
-      .delete(`http://localhost:5000/mybookings/${id}`)
+      .delete(`https://cryptic-ocean-42525.herokuapp.com/mybookings/${id}`)
       .then((res) => {
         const remainingBookings = bookings.filter(
           (booking) => booking._id !== id

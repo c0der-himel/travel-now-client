@@ -1,6 +1,7 @@
 import {
   createUserWithEmailAndPassword,
   getAuth,
+  getIdToken,
   GoogleAuthProvider,
   onAuthStateChanged,
   signInWithEmailAndPassword,
@@ -84,6 +85,9 @@ const useFirebase = () => {
   useEffect(() => {
     const unsubscribed = onAuthStateChanged(auth, (user) => {
       if (user) {
+        getIdToken(user).then((idToken) =>
+          localStorage.setItem('idToken', idToken)
+        );
         setUser(user);
       } else {
         setUser({});

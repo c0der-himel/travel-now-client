@@ -7,7 +7,7 @@ const Destinations = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/destinations')
+      .get('https://cryptic-ocean-42525.herokuapp.com/destinations')
       .then((res) => setDestinations(res.data))
       .catch((err) => console.log(err));
   }, []);

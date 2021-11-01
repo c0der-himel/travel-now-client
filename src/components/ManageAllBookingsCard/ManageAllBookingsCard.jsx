@@ -22,7 +22,7 @@ const ManageAllBookingsCard = ({ booking, handleDeleteBooking }) => {
 
   const handleStatusUpdate = (id) => {
     axios
-      .put(`http://localhost:5000/updatestatus/${id}`, {
+      .put(`https://cryptic-ocean-42525.herokuapp.com/updatestatus/${id}`, {
         statusUpdate: 'approved',
       })
       .then((res) => {
