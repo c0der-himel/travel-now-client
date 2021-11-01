@@ -117,7 +117,7 @@ const Details = () => {
                 ></textarea>
                 {errors.address?.type === 'required' && (
                   <div className="bg-red-200 text-gray-500 mt-3 text-center py-2 rounded">
-                    Address size is required
+                    Address is required
                   </div>
                 )}
               </div>
