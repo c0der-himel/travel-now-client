@@ -40,7 +40,7 @@ const NewDestination = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-4xl text-3xl font-bold title-font mb-4 text-gray-700">
-            Add A New Booking
+            Add A New Destination
           </h1>
           <div className="h-1 w-20 bg-blue-500 rounded mx-auto"></div>
         </div>
@@ -56,7 +56,7 @@ const NewDestination = () => {
                 <div className="relative">
                   <label
                     htmlFor="destinationName"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm text-gray-600 ml-2"
                   >
                     Destination Name
                   </label>
@@ -65,7 +65,7 @@ const NewDestination = () => {
                     type="text"
                     id="destinationName"
                     name="destinationName"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-700 rounded-3xl focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm mb-3"
                   />
                   {errors.destinationName?.type === 'required' && (
                     <div className="bg-red-200 text-gray-500 mt-3 text-center py-2 rounded">
@@ -78,7 +78,7 @@ const NewDestination = () => {
                 <div className="relative">
                   <label
                     htmlFor="price"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm text-gray-600 ml-2"
                   >
                     Price
                   </label>
@@ -87,7 +87,7 @@ const NewDestination = () => {
                     type="number"
                     id="price"
                     name="price"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-700 rounded-3xl focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm mb-3"
                   />
                   {errors.price?.type === 'required' && (
                     <div className="bg-red-200 text-gray-500 mt-3 text-center py-2 rounded">
@@ -100,7 +100,7 @@ const NewDestination = () => {
                 <div className="relative">
                   <label
                     htmlFor="night"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm text-gray-600 ml-2"
                   >
                     Night
                   </label>
@@ -109,7 +109,7 @@ const NewDestination = () => {
                     type="number"
                     id="night"
                     name="night"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-700 rounded-3xl focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm mb-3"
                   />
                   {errors.night?.type === 'required' && (
                     <div className="bg-red-200 text-gray-500 mt-3 text-center py-2 rounded">
@@ -122,7 +122,7 @@ const NewDestination = () => {
                 <div className="relative">
                   <label
                     htmlFor="day"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm text-gray-600 ml-2"
                   >
                     Day
                   </label>
@@ -131,7 +131,7 @@ const NewDestination = () => {
                     type="number"
                     id="day"
                     name="day"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-700 rounded-3xl focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm mb-3"
                   />
                   {errors.day?.type === 'required' && (
                     <div className="bg-red-200 text-gray-500 mt-3 text-center py-2 rounded">
@@ -144,7 +144,7 @@ const NewDestination = () => {
                 <div className="relative">
                   <label
                     htmlFor="img"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm text-gray-600 ml-2"
                   >
                     Image URL
                   </label>
@@ -153,7 +153,7 @@ const NewDestination = () => {
                     type="text"
                     id="img"
                     name="img"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-700 rounded-3xl focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm mb-3"
                   />
                   {errors.img?.type === 'required' && (
                     <div className="bg-red-200 text-gray-500 mt-3 text-center py-2 rounded">
@@ -166,15 +166,16 @@ const NewDestination = () => {
                 <div className="relative">
                   <label
                     htmlFor="description"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm text-gray-600 ml-2"
                   >
                     Description
                   </label>
                   <textarea
+                    rows="8"
                     {...register('description', { required: true })}
                     id="description"
                     name="description"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-700 rounded-3xl focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm mb-3 resize-none"
                   ></textarea>
                   {errors.description?.type === 'required' && (
                     <div className="bg-red-200 text-gray-500 mt-3 text-center py-2 rounded">
@@ -184,8 +185,8 @@ const NewDestination = () => {
                 </div>
               </div>
               <div className="p-2 w-full mt-3">
-                <button className="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">
-                  Add Booking
+                <button className="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 hover:shadow rounded-3xl text-lg shadow-2xl transition duration-500">
+                  Add Destination
                 </button>
                 {/* modal popup */}
                 {open ? (
@@ -245,13 +246,13 @@ const NewDestination = () => {
                             <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                               <HashLink
                                 to="/home#destinations"
-                                className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-6 py-2 bg-blue-500 text-base font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 sm:ml-3 sm:w-auto sm:text-sm"
+                                className="w-full inline-flex justify-center rounded-3xl shadow-2xl border border-transparent px-6 py-2 bg-blue-500 text-base font-medium text-white hover:bg-blue-600 sm:ml-3 sm:w-auto sm:text-sm transition duration-500 hover:shadow"
                               >
                                 Destinations
                               </HashLink>
                               <button
                                 type="button"
-                                className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-6 py-2 bg-red-500 text-base font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400 sm:ml-3 sm:w-auto sm:text-sm"
+                                className="w-full inline-flex justify-center rounded-3xl shadow-2xl px-6 py-2 text-base font-medium text-red-500 border border-red-500 hover:bg-red-400 sm:ml-3 sm:w-auto sm:text-sm transition duration-500 hover:shadow hover:text-white"
                                 onClick={() => setOpen(false)}
                               >
                                 Close
@@ -271,4 +272,5 @@ const NewDestination = () => {
     </section>
   );
 };
+
 export default NewDestination;

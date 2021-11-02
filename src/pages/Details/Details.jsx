@@ -82,7 +82,7 @@ const Details = () => {
                 <div className="relative">
                   <label
                     htmlFor="people"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm text-gray-600 ml-2"
                   >
                     Group Size (People)
                   </label>
@@ -91,7 +91,7 @@ const Details = () => {
                     type="number"
                     id="people"
                     name="people"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-700 rounded-3xl focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm mb-3"
                   />
                   {errors.people?.type === 'required' && (
                     <div className="bg-red-200 text-gray-500 mt-3 text-center py-2 rounded">
@@ -105,15 +105,16 @@ const Details = () => {
               <div className="relative">
                 <label
                   htmlFor="address"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-7 text-sm text-gray-600 ml-2"
                 >
                   Address
                 </label>
                 <textarea
+                  rows="5"
                   {...register('address', { required: true })}
                   id="address"
                   name="address"
-                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-700 rounded-3xl focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm mb-3 resize-none"
                 ></textarea>
                 {errors.address?.type === 'required' && (
                   <div className="bg-red-200 text-gray-500 mt-3 text-center py-2 rounded">
@@ -122,10 +123,10 @@ const Details = () => {
                 )}
               </div>
             </div>
-            <div className="flex justify-start mt-5">
+            <div className="flex justify-start mt-7">
               <button
                 type="submit"
-                className="inline-flex text-white bg-blue-500 border-0 py-2 px-10 focus:outline-none hover:bg-blue-600 rounded-3xl text-lg transition shadow-2xl"
+                className="inline-flex text-white bg-blue-500 border-0 py-2 px-10 focus:outline-none hover:bg-blue-600 rounded-3xl text-lg transition shadow-2xl duration-500 hover:shadow"
               >
                 Book Now
               </button>
@@ -187,13 +188,13 @@ const Details = () => {
                           <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                             <Link
                               to="/mybookings"
-                              className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-6 py-2 bg-blue-500 text-base font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 sm:ml-3 sm:w-auto sm:text-sm"
+                              className="w-full inline-flex justify-center rounded-3xl shadow-2xl border border-transparent px-6 py-2 bg-blue-500 text-base font-medium text-white hover:bg-blue-600 sm:ml-3 sm:w-auto sm:text-sm transition duration-500 hover:shadow"
                             >
                               My Bookings
                             </Link>
                             <button
                               type="button"
-                              className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-6 py-2 bg-red-500 text-base font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400 sm:ml-3 sm:w-auto sm:text-sm"
+                              className="w-full inline-flex justify-center rounded-3xl shadow-2xl px-6 py-2 text-base font-medium text-red-500 border border-red-500 hover:bg-red-400 sm:ml-3 sm:w-auto sm:text-sm transition duration-500 hover:shadow hover:text-white"
                               onClick={() => setOpen(false)}
                             >
                               Close

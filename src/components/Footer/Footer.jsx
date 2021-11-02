@@ -1,6 +1,22 @@
+import {
+  faEnvelopeOpenText,
+  faMapMarkerAlt,
+  faPhone,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../../assets/img/logo/logo.png';
 
 const Footer = () => {
+  const locationIcon = (
+    <FontAwesomeIcon className="text-blue-500" icon={faMapMarkerAlt} />
+  );
+  const phoneIcon = (
+    <FontAwesomeIcon className="text-blue-500" icon={faPhone} />
+  );
+  const emailIcon = (
+    <FontAwesomeIcon className="text-blue-500" icon={faEnvelopeOpenText} />
+  );
+
   return (
     <footer className="text-gray-600 body-font bg-blue-50">
       <div className="container px-5 pt-24 mx-auto">
@@ -11,22 +27,34 @@ const Footer = () => {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
+                <a
+                  href="/"
+                  className="text-gray-600 hover:text-blue-500 inline-block mb-1"
+                >
                   Santorini
                 </a>
               </li>
               <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
+                <a
+                  href="/"
+                  className="text-gray-600 hover:text-blue-500 inline-block mb-1"
+                >
                   Bali
                 </a>
               </li>
               <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
+                <a
+                  href="/"
+                  className="text-gray-600 hover:text-blue-500 inline-block mb-1"
+                >
                   Istanbul
                 </a>
               </li>
               <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
+                <a
+                  href="/"
+                  className="text-gray-600 hover:text-blue-500 inline-block mb-1"
+                >
                   Russia
                 </a>
               </li>
@@ -38,22 +66,34 @@ const Footer = () => {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
+                <a
+                  href="/"
+                  className="text-gray-600 hover:text-blue-500 inline-block mb-1"
+                >
                   Watch
                 </a>
               </li>
               <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
+                <a
+                  href="/"
+                  className="text-gray-600 hover:text-blue-500 inline-block mb-1"
+                >
                   Compass
                 </a>
               </li>
               <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
+                <a
+                  href="/"
+                  className="text-gray-600 hover:text-blue-500 inline-block mb-1"
+                >
                   Map
                 </a>
               </li>
               <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
+                <a
+                  href="/"
+                  className="text-gray-600 hover:text-blue-500 inline-block mb-1"
+                >
                   Shoe
                 </a>
               </li>
@@ -61,29 +101,21 @@ const Footer = () => {
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-bold text-gray-700 tracking-widest text-xl mb-3">
-              CATEGORIES
+              Address
             </h2>
             <nav className="list-none mb-10">
-              <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
-                  Island
-                </a>
-              </li>
-              <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
-                  Mountain
-                </a>
-              </li>
-              <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
-                  Forest
-                </a>
-              </li>
-              <li>
-                <a href="/" className="text-gray-600 hover:text-blue-500">
-                  Sea
-                </a>
-              </li>
+              <p className="mb-3">
+                {locationIcon}
+                <span className="ml-3">Flat 20, Reynolds Neck</span>
+              </p>
+              <p className="mb-3">
+                {phoneIcon}
+                <span className="ml-3">+2(305) 587-3407</span>
+              </p>
+              <p className="mb-3">
+                {emailIcon}
+                <span className="ml-3">info@example.com</span>
+              </p>
             </nav>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">

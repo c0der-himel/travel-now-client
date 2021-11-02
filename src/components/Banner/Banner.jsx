@@ -32,7 +32,7 @@ const Banner = () => {
               <div className="btn-group mt-10">
                 <HashLink
                   to="/home#destinations"
-                  className="bg-blue-500 hover:bg-blue-600 px-12 py-3 text-white rounded-3xl transition text-lg"
+                  className="bg-blue-500 hover:bg-blue-600 px-12 py-3 text-white rounded-3xl shadow-2xl transition text-lg duration-500 hover:shadow"
                 >
                   Explore Tours
                 </HashLink>
@@ -44,4 +44,5 @@ const Banner = () => {
     </div>
   );
 };
+
 export default Banner;

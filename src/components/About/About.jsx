@@ -21,13 +21,13 @@ const About = () => {
           <div className="flex justify-center">
             <HashLink
               to="/home#destinations"
-              className="inline-flex text-white bg-blue-500 border-0 py-2 px-10 focus:outline-none hover:bg-blue-600 rounded-3xl text-lg transition shadow-2xl"
+              className="inline-flex text-white bg-blue-500 border-0 py-2 px-10 focus:outline-none hover:bg-blue-600 rounded-3xl text-lg transition shadow-2xl duration-500 hover:shadow"
             >
               Destinations
             </HashLink>
             <HashLink
               to="/home#testimonials"
-              className="ml-4 inline-flex text-gray-700 bg-gray-300 border-0 py-2 px-10 focus:outline-none hover:bg-gray-400 rounded-3xl text-lg transition shadow-2xl"
+              className="ml-4 inline-flex text-gray-700 bg-gray-300 border-0 py-2 px-10 focus:outline-none hover:bg-gray-400 rounded-3xl text-lg transition shadow-2xl duration-500 hover:shadow"
             >
               Reviews
             </HashLink>

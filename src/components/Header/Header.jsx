@@ -66,7 +66,7 @@ const Header = () => {
                           item.current
                             ? 'bg-blue-500 text-white'
                             : 'text-gray-700 hover:bg-blue-500 hover:text-white',
-                          'px-6 py-2 rounded-3xl text-sm transition'
+                          'px-6 py-2 rounded-3xl text-sm transition duration-500 hover:shadow-2xl'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -113,7 +113,7 @@ const Header = () => {
                                   active
                                     ? 'bg-blue-500 text-white rounded-3xl'
                                     : '',
-                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white transition'
+                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white hover:shadow-2xl transition duration-500 rounded-3xl'
                                 )}
                               >
                                 Log Out
@@ -128,7 +128,7 @@ const Header = () => {
                                   active
                                     ? 'bg-blue-500 text-white rounded-3xl'
                                     : '',
-                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white transition'
+                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white transition hover:shadow-2xl transition duration-500 rounded-3xl'
                                 )}
                               >
                                 Manage All Bookings
@@ -143,7 +143,7 @@ const Header = () => {
                                   active
                                     ? 'bg-blue-500 text-white rounded-3xl'
                                     : '',
-                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white transition'
+                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white hover:shadow-2xl transition duration-500 rounded-3xl'
                                 )}
                               >
                                 My Bookings
@@ -158,7 +158,7 @@ const Header = () => {
                                   active
                                     ? 'bg-blue-500 text-white rounded-3xl'
                                     : '',
-                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white transition'
+                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white hover:shadow-2xl transition duration-500 rounded-3xl'
                                 )}
                               >
                                 Add A New Destination
@@ -176,7 +176,7 @@ const Header = () => {
                                   active
                                     ? 'bg-blue-500 text-white rounded-3xl'
                                     : '',
-                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white transition'
+                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white hover:shadow-2xl transition duration-500 rounded-3xl'
                                 )}
                               >
                                 LogIn
@@ -191,7 +191,7 @@ const Header = () => {
                                   active
                                     ? 'bg-blue-500 text-white rounded-3xl'
                                     : '',
-                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white transition'
+                                  'block px-4 py-2 text-sm text-gray-700 hover:text-white transition hover:shadow-2xl  duration-500 rounded-3xl'
                                 )}
                               >
                                 Register

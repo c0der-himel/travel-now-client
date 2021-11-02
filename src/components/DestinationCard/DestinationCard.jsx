@@ -25,7 +25,7 @@ const DestinationCard = (props) => {
           </h2>
           <Link
             to={`/destinations/${_id}`}
-            className="inline-flex text-white bg-blue-500 border-0 py-2 px-10 focus:outline-none hover:bg-blue-600 rounded-3xl text-lg transition shadow-2xl"
+            className="inline-flex text-white bg-blue-500 border-0 py-2 px-10 focus:outline-none hover:bg-blue-600 rounded-3xl text-lg transition shadow-2xl duration-500 hover:shadow"
           >
             Book Now
           </Link>

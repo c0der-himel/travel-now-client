@@ -63,7 +63,11 @@ const ManageAllBookingsCard = ({ booking, handleDeleteBooking }) => {
         <td className="px-6 py-4 whitespace-nowrap">
           <button
             onClick={() => handleStatusUpdate(_id)}
-            className="px-4 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-500"
+            className={
+              status === 'approved'
+                ? 'px-4 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-500'
+                : 'px-4 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-500'
+            }
           >
             {updateStatus}
           </button>
@@ -116,14 +120,14 @@ const ManageAllBookingsCard = ({ booking, handleDeleteBooking }) => {
                         <div className="sm:flex sm:items-start">
                           <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
                             <ShieldCheckIcon
-                              className="h-8 w-8 text-red-500"
+                              className="h-8 w-8 text-red-400"
                               aria-hidden="true"
                             />
                           </div>
                           <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                             <Dialog.Title
                               as="h3"
-                              className="text-2xl leading-6 font-bold text-red-500 mt-1"
+                              className="text-2xl leading-6 font-bold text-red-400 mt-1"
                             >
                               Sure, want to cancel booking ?
                             </Dialog.Title>
@@ -133,13 +137,13 @@ const ManageAllBookingsCard = ({ booking, handleDeleteBooking }) => {
                       <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                         <button
                           onClick={() => handleDeleteBooking(_id)}
-                          className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-6 py-2 bg-blue-500 text-base font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 sm:ml-3 sm:w-auto sm:text-sm"
+                          className="w-full inline-flex justify-center rounded-3xl shadow-2xl border border-transparent px-6 py-2 bg-blue-500 text-base font-medium text-white hover:bg-blue-600 sm:ml-3 sm:w-auto sm:text-sm transition duration-500 hover:shadow"
                         >
                           Yes
                         </button>
                         <button
                           type="button"
-                          className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-6 py-2 bg-red-500 text-base font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400 sm:ml-3 sm:w-auto sm:text-sm"
+                          className="w-full inline-flex justify-center rounded-3xl shadow-2xl px-6 py-2 text-base font-medium text-red-500 border border-red-500 hover:bg-red-400 sm:ml-3 sm:w-auto sm:text-sm transition duration-500 hover:shadow hover:text-white"
                           onClick={() => setOpen(false)}
                         >
                           No
